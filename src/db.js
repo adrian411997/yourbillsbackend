@@ -6,7 +6,7 @@ const path = require("path");
 const { DB_NAME, DB_USER, DB_HOST, DB_PASSWORD } = process.env;
 console.log(DB_NAME, DB_USER, DB_HOST, DB_PASSWORD);
 let sequelize = new Sequelize(
-  `postgres://${DB_USER}:${DB_PASSWORD}@localhost:${DB_HOST}/${DB_NAME}`,
+  "postgresql://postgres:I5AjrxeDafilnXy6qTif@containers-us-west-173.railway.app:5899/railway",
   {
     logging: false,
     native: false,
